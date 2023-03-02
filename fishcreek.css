@@ -4,7 +4,7 @@
 
 header {
   background-color: #006;
-  background-image: url(../images/bigfish.gif);
+  background-image: url(bigfish.gif);
   background-repeat: no-repeat;
   background-position: center;
   width: auto;
@@ -21,7 +21,7 @@ h1 {
 }
 
 body {
-  background-image: url(../images/gradientblue.jpg);
+  background-image: url(gradientblue.jpg);
 }
 table{
 margin: 1em;
@@ -172,7 +172,7 @@ textarea{
   }
   @media only screen and (max-width:768px){
     header{
-      background-image: url(../images/lilfish.gif);
+      background-image: url(lilfish.gif);
       background-repeat: none;
       background-position: center;
     }
