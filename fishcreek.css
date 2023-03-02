@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #006;
+  background-image: url(../images/bigfish.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  color: white;
+  text-align: center;
+
+}
+
+h1 {
+  line-height: 150%;
+  font-size: 3em;
+  padding: 10px;
+  text-shadow: #ccc;
+}
+
+body {
+  background-image: url(../images/gradientblue.jpg);
+}
+table{
+margin: 1em;
+border-color: #003366;
+border: 2px;
+border-collapse: collapse;
+}
+td{
+  margin: .5em;
+  border:#003366, 1px;
+}
+th{
+  margin: .5em;
+  border: #003366, 1px;
+}
+nav {
+  font-weight: bold;
+  background-color: #FFF;
+  padding-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+nav a:link{
+  color: #3262a3;
+}
+nav a:visited{
+  color: #6699FF;
+}
+nav a:hover{
+  color: #CCC;
+}
+.sideleft {
+  width: 150px;
+  float: left;
+}
+
+.sideright {
+  margin-left: 180px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+img {
+  border: none;
+
+}
+
+main {
+  color: #003366;
+  font-family: Verdana;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+
+}
+video{
+  float: right;
+  margin: 1em;
+}
+#wrapper {
+  MIN-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #006;
+  background-color: #FFF;
+
+}
+label{
+  float: left;
+  display: block;
+  text-align: right;
+  width: 8em;
+  padding-right: 1em;
+}
+input{
+  display: block;
+  margin-bottom: 1em;
+}
+textarea{
+  display: block;
+  margin-bottom: 1em;
+}
+.mysubmit{
+  margin-left: 9.5em;
+}
+.category {
+  color: #5280c5;
+  text-indent: 1.1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #667;
+  background-color: #FFF;
+}
+#mobile{
+  display: none;
+}
+#desktop{
+  display: inline;
+}
+@media only screen and(
+  max-width: 1024px){
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      background-image:none;
+    }
+    #wrapper{ 
+      width: auto;
+      min-width: 0;
+      margin: 0;
+    }
+    h1{
+      margin: 0;
+      font-size: 1.8em;
+      line-height: 200%;
+    }
+    nav{
+      float: none;
+      width: auto;
+    }
+    nav li{
+      display: inline-block;
+    }
+    nav a {
+      padding: 1em;
+      font-size: 1.2em;
+    }
+    nav ul{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    main{
+      font-size: 90%;
+      margin: 0;
+      padding-left: 2em;
+    }
+    footer{
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width:768px){
+    header{
+      background-image: url(../images/lilfish.gif);
+      background-repeat: none;
+      background-position: center;
+    }
+    h1{
+      font-size: 1.5em;
+      line-height: 120%;
+    }
+    nav a{
+      display: block;
+      padding: 0.2em;
+      font-size: 1.3em;
+      border-bottom: 1px #330000;
+    }
+    nav li{
+      display: block;
+    }
+    nav ul{
+      text-align: left;
+    }
+    main{
+      padding-left: 1em;
+    }
+    .category{
+      text-shadow: none;
+    }
+    #mobile{
+      display: inline;
+    }
+    #desktop{ display: none;}
+  }
+
+footer {
+  font-size: .70em;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 180px;
+}
+
+header, nav, main, footer {
+  display: block;
+}

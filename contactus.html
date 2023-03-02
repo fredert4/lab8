@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width=1.0, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Fish Creek Animal Clinic</title>
+    <link rel="stylesheet" href="css/fishcreek.css">
+    <!--[if 1t Ie 9]>
+    <script crs="http://html5shim.google.code.come/svn/thrunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Fish Creek Animal Hospital</h1>
+        </header>
+        <div class="sideleft">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="askthevet.html">As The Vet</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <div class="sideright">
+            <main>
+                <h2>Contact Fish Creek</h2>
+                Required information is marked with asterisk(*)
+                <script>
+                    function validateForm() {
+                        if (document.forms[0].myEmail.value == "" ){
+                            alert("Please enter an email address.");
+                            return false;
+                            console.log("false");
+                        } // end if
+                        return true;
+                        //end function validateForm
+                    }
+                </script>
+                <form method="post" action="http://webdevbasics.net/scripts/fishcreek.php" onsubmit="return validateForm();">
+                    <label for="name">  Name</label> <input type="text" name="name" id="name " placeholder="My Name...">
+            
+                    <br>
+                    <label for="Email"> * E-mail</label>
+                    <input type="Email" name="myemail" id="myEmail"placeholder="Enter your email">
+                    <br>
+                        <label for="comments"> Comments</label>
+                        <Br>
+                            <textarea name="" id="" cols="20" rows="2" placeholder="Enter your Comments..."></textarea>
+                    <input type="Submit" value="Submit Now">
+                </form>
+        <footer>
+            <br>
+            Copyright &copy; 2018 Fish Creek Animal Clinic
+            <a href="mailto:tiafrederick@ymail.com">Contact Us Here </a>
+            <br>
+            <script>
+                document.write("This document is lastly modified on" + " " +document.lastModified);
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>
